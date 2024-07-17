@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="startsida.css">
+    <title>Sveriges Färdtjänst</title>
+</head>
+<body>
+    <header>
+        <!--Logga-->
+        <figure>
+            <a href="startsida.html"><img src="ikoner/Sveriges.png"  alt="" class="logo"></a>
+        </figure>
+    
+        <!--Hoppa över innehåll-knapp-->
+        <a href="#start" class="skip-btn">Hoppa till innehållet</a>
+    
+        <!--Ikoner-->
+    <figure class="icon-container">
+        <img src="ikoner/phone-solid.svg" style="width: 3vh;" alt=""> 
+        <a href="kundservice.html">Kontakt</a>
+        <img src="ikoner/language-solid.svg" style="width: 3vh;" alt=""> 
+        <a href="#">Språk</a>
+    </figure>
+    
+        <!--Navigeringen högst upp på sidan-->
+        <nav class="tab-nav">
+    
+            <button class="login-btn">Logga in</button>
+            <ul>
+                <li><a href="startsida.html">Start</a></li>
+                <li><a href="omfardtjanst.html">Frågor och svar</a></li>
+                <li><a href="bokaresa.html">Boka resa</a></li>
+                <li><a href="minasidor.html">Mina sidor</a></li>
+                <li><a href="kundservice.html" class="pressed">Kundservice</a></li>
+         </ul>
+           
+            <!--Sökrutan och knapp-->
+            <label for="search_box" class="search_text">Sökruta</label>
+            <input type="search" name="search" id="search_box" placeholder= "skriv din sökfras" class="search-bar">
+            <button class="search-btn">Sök</button> 
+               
+        </nav>
+    
+            <!--Menyns banner-->
+            <div class="box"></div>
+    
+            <!--Mobil navigering-->
+            <button class="menu-btn open" id="open-menu">
+                <span class="menu-icon">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu-text">Meny</span>
+            </button>
+    
+            <nav id="nav-menu">
+                <button class="menu-btn close" id="close-menu">
+                    <span class="menu-icon">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menu-text">Stäng</span>
+                </button>
+                <ul>
+                    <li><img class="house-icon" src="ikoner/house-solid.svg" alt=""><a href="startsida.html">Start</a></li>
+                    <li><img class="info-icon" src="ikoner/info-solid.svg" alt=""><a href="omfardtjanst.html">Frågor och svar</a></li>
+                    <li><img class="suitcase-icon" src="ikoner/suitcase-solid.svg" alt=""><a href="bokaresa.html">Boka resa</a></li>
+                    <li><img class="user-icon" src="ikoner/user-solid.svg" alt=""><a href="minasidor.html">Mina sidor</a></li>
+                    <li><img class="phone-icon" src="ikoner/phone-solid.svg" alt=""><a href="kundservice.html">Kundservice</a></li>
+                </ul>
+            </nav>
+    
+        <!--Brödsmulor-->
+        <nav>
+            <ul class="breadcrumbs">
+                <li class="bread-item"> Du är här: <a href="startsida.html">Startsida</a></li>
+                <li class="bread-item"><a>Kundservice</a></li>
+            </ul>
+        </nav>
+    
+            
+    
+    </header>
+
+    <main class="contact-container" id="start">
+        <h1>Kundservice</h1>
+        <article class="contact-box">
+            <h2>Kontakta oss</h2>
+            <section> 
+                <br>
+                <h3>Telefon</h3>
+                <p>Öppentider: Helgfri vardag klockan 7-20 <br> Telefonnummer: 070- 222 33 11</p>
+                <br>
+                <h3>E-post</h3>
+                <p>Mejla till: kundtjanst@sverigesfardtjanst.se</p>
+                <br>
+                <h3>Postadress</h3>
+                <p>Om du behöver posta något till oss så använder du följande adress: <br> Sveriges färdtjänst <br> Trädgårdsgatan 4 <br> 82480 Hudiksvall </p>
+            </section>
+        </article>
+        <article class="contact-box">
+            <h2>Vill du skicka synpunkter?</h2>
+            <br>
+            <p>Om du vill skicka synpunkter till oss så kan du använda dig av formuläret nedan. Dina synpunkter kan handla om allt ifrån dina resor eller om du stöter på några problem på webbplatsen. </p>
+            <br>
+
+
+            <form  class="contact-form">
+                <label for="subject">Ämne</label>
+                <br>
+                <select id="subject">
+                    <option value="Beröm">Beröm</option> 
+                    <option value="Kritik">Kritik</option>  
+                    <option value="Fel på webbplats">Fel på webbplats</option> 
+                </select>
+                <br>
+                <br>
+                <label for="desc">Beskrivning</label>
+                <br>
+                <textarea name="description" id="desc" cols="30" rows="10"></textarea>
+                <br>
+                <br>
+                <label for="id">Kundnummer</label>
+                <br>
+                <input type="text" id="id">
+                <br>
+                <br>
+                    <fieldset>
+                        <legend>Vill du ha svar?</legend>
+                            <input type="radio" name="answer" id="yes">
+                            <label for="yes">Ja</label>
+                            <input type="radio" name="answer" id="no">
+                            <label for="no">Nej</label>
+                    </fieldset>
+                <br>
+                <br>
+                <button id="customer-btn">Skicka</button>
+            </form>
+        </article>
+
+        <article class="contact-box">
+            <h2>Om webbplatsen</h2>
+            <br>
+            <h3>Tillgänglighet för Sveriges Färdtjänst</h3>
+            <br>
+            <p>Sveriges Färdtjänst står bakom den här webbplatsen. Vi vill att så många som möjligt ska kunna använda den. Det här dokumentet beskriver hur Sveriges Färdtjänst uppfyller lagen om tillgänglighet till digital offentlig service, eventuella kända tillgänglighetsproblem och hur du kan rapportera brister till oss så att vi kan åtgärda dem. </p>
+            <br>
+            <h4>Hur tillgänglig är webbplatsen?</h4>
+            <p>Vi är medvetna om att delar av webbplatsen inte är helt tillgängliga. Se avsnittet om innehåll som inte är tillgängligt nedan för mer information.</p>
+            <br>
+            <h4>Vad kan du göra om du inte kan använda delar av webbplatsen?</h4>
+            <p>Om du behöver innehåll från Sveriges Färdtjänst som inte är tillgängligt för dig, men som är undantaget från lagens tillämpningsområde enligt beskrivning nedan, kan du meddela oss via vårat kontaktformulär.
+                Svarstiden är normalt 1-2 arbetsdagar.<br>Du kan också kontakta oss på följande sätt:</p>
+                <ul class="contact-list">
+                    <li class="contact-list">skicka e-post till sverigesfardtjanst@ex.se. </li>
+                    <li class="contact-list">ring 0771-11 22 33. </li>
+                </ul>
+            <br>
+            <br>
+            <h4>Rapportera brister i webbplatsens tillgänglighet</h4>
+            <p>Vi strävar hela tiden efter att förbättra webbplatsens tillgänglighet. Om du upptäcker problem som inte är beskrivna på den här sidan, eller om du anser att vi inte uppfyller lagens krav, ring eller mejla oss så att vi får veta att problemet finns.</p>
+            <br>
+            <h4>Tillsyn</h4>
+            <p>Myndigheten för digital förvaltning har ansvaret för tillsyn över lagen om tillgänglighet till digital offentlig service. Om du inte är nöjd med hur vi hanterar ditt påpekande om bristande webbtillgänglighet eller din begäran om tillgängliggörande av innehåll kan du anmäla till <a href="https://www.digg.se/">Myndigheten för digital förvaltning</a>.</p>
+            <br>
+            <h4>Teknisk information om webbplatsens tillgänglighet</h4>
+            <p>Den här webbplatsen är delvis förenlig med lagen om tillgänglighet till digital offentlig service, på grund av de brister som beskrivs nedan.</p>
+            <br>
+            <h4>Innehåll som inte är tillgängligt</h4>
+            <p>Det innehåll som beskrivs nedan är på ett eller annat sätt inte helt tillgängligt.</p>
+            <br>
+            <h5>Bristande förenlighet med lagkraven</h5>
+            <ul>
+                <li class="contact-list">Problem vid förstorning av text.<br> Texten som finns på webbplatsen går inte att förstora i enlighet med riktlinje 1.4.4 (R127).</li>
+                <li class="contact-list">Ångra klick. <br>Ingen knapp på webbplatsen har funktionalitet för att ångra ett klick enligt riktlinje 2.5.2 (R161).</li>
+                <li class="contact-list">Respektera användarens inställningar. <br> Vi följer denna lag delvist, användaren kan öka fontstorleken men andra inställningar så som färg m.m. kan vara ofullständiga, detta på grund av att !important används i CSS stilmallen. (R170).</li>
+                <li class="contact-list">Öka avstånd mellan tecken, rader, stycken och ord. <br> Vi följer denna lag delvist, användaren kan öka fontstorlek men att öka avstånd mellan tecken, rad, stycken och ord kan vara ofullständiga.  Riktlinje 1.4.12 (R157).</li>
+                <li class="contact-list">Pop-up funktioner. <br>Vi följer denna lag delvist, webbplatsen har ett pop-up fönster innan användaren avbokar en resa. Pop-up rutan har dock en stängknapp och det går även att klicka på ESC.</li>
+            </ul>
+            <br>
+            <p>Vår ambition är att ha åtgärdat alla kända tillgänglighetsproblem senast den 10-10-2023. </p>
+            <br>
+            <h4>Hur vi testat webbplatsen</h4>
+            <p>Vi har gjort en självskattning (intern testning) av Sveriges Färdtjänst. Vi har uppskattat tillgängligheten utan granskning. </p>
+            <p>Senaste bedömningen gjordes den 10:e Januari 2023.</p>
+            <p>Webbplatsen publicerades den 2023-01-15. </p>
+            <p>Redogörelsen uppdaterades senast den 2023-01-10.</p>
+        </article>
+    </main>
+
+<!--Fotnot-->
+ <footer>
+    <h3 class="contact">Kontakta oss</h3>
+    <hr class="line1">
+    <p class="contact-text">sverigesfardtjanst@ex.se <br> Tel: 0771-11 22 33</p>
+    <h3 class="about">Om webbplatsen</h3>
+    <hr class="line2">
+    <p class="about-text"> <a href="kundservice.html">Tillgänglighetsredogörelse</a> <br> <a href="kundservice.html">Rapportera fel på webbplatsen</a></p>
+</footer>
+<!--Fotnot-->
+
+<script src="index.js"></script>
+</body>
+</html>

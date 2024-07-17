@@ -1,0 +1,1160 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+fieldset{
+    border: none;
+}
+
+li{
+    list-style: none;
+}
+
+/*GÃ¶r att tabb markeringen blir tydligare*/
+img:focus, a:focus{
+    outline: blue solid 6px;
+    background-color: rgba(17, 0, 255, 0.527);
+}
+ 
+.search_text{
+    display: none;
+}
+
+
+/*Mobilnavigeringen*/
+#nav-menu, .menu-text, .menu-btn, .form-mobile{
+    display: none;
+}
+
+/*Navigeringen -------------->*/
+
+.tab-nav {
+    margin-top: 1%;
+    overflow: hidden;
+    font-size: 2vh;
+}
+
+.tab-nav a {
+    float: left; 
+    color: white;
+    text-align: center;
+    padding-top: 0.5%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 0.5%;
+    margin-left: 0.4%;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+    background-color: #000000;
+}
+
+.tab-nav a.pressed {
+    background-color: #305D69;
+}
+
+.box{
+    width: 100%;
+    height: 3em;
+    background-color: #305D69;
+}
+
+/*BrÃ¶dsmulor*/
+.breadcrumbs{
+    list-style: none;
+    margin-top: 2%;
+    font-size: 20px;
+}
+
+.bread-item{
+    display: inline;
+}
+
+/*GÃ¶r sÃ¥ att det finns / mellan brÃ¶dsmulorna*/
+.breadcrumbs li+li:before{
+    padding: 0.5%;
+    content: " / ";
+    color: black;
+}
+
+/*Navigeringen -------------->*/
+
+
+/*Hoppa Ã¶ver till innehÃ¥llet knapp ---------->*/
+.skip-btn{
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    border: none;
+    background: none;
+    color: rgb(255, 255, 255);
+}
+
+.skip-btn:focus-within{
+    background-color: yellow;
+    padding: 1%;
+    border: black solid 4px;        
+    color: black;
+}
+
+/*Ikoner --------------------->*/
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    position: absolute;
+    top: 2vh;
+    right: 12%;
+}
+
+
+/*SÃ¶krutan ------------------>*/
+
+.search-bar{
+    position: absolute;
+    top: 26%;
+    right: 7%;
+
+    border: black solid 2px;
+    background-color: #D9D9D9;
+    width: 25%;
+    height: 30px;
+}
+
+.search-btn{
+    position: absolute;
+    top: 26.3%;
+    right: 2%;
+
+    padding-top: 0.3%;
+    padding-bottom: 0.3%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+/*Logga in knapp------------------->*/
+.login-btn{
+    position: absolute;
+    top: 2vh;
+    right: 3%;
+
+    background-color: black;
+    color: white;
+    border: none;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    cursor: pointer;
+}
+
+
+/*HuvudinnehÃ¥llet----------------->*/
+.container{
+    background-color: #D9D9D9;
+    margin: 10vh;
+    height: fit-content;
+    border-radius: 3vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+
+/*Texten inne i boxarna*/
+h2, h1{
+    text-align: center;
+    font-size: 35px;
+}
+
+
+/*Textrutorna*/
+.info-box1{
+    background-color: #305D69;
+    color: white;
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+
+    grid-column: 1/5;
+    grid-row: 1/1;
+}
+
+.box-text{
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 2.5vh;
+}
+
+.box-title{
+    margin-bottom: 1vh;
+}
+
+.info-box2{
+    background-color: #305D69;
+    color: white;
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    grid-column: 1/5;
+}
+
+.info-box3{
+    background-color: #305D69;
+    color: white;
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    grid-column: 1/5;
+}
+
+.info-box4{
+    background-color: #305D69;
+    color: white;
+    padding: 3%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    grid-column: 1/5;
+}
+
+/*lÃ¤nkar i boxarna*/
+article a:link{
+    color: #ffffff;
+}
+
+article a:hover{
+    background-color: rgba(255, 255, 0, 0.658);
+}
+
+article a:visited{
+    color: white;
+}
+
+
+/*Fotnoten -------------------->*/
+
+footer{
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    background-color: #4E4E4E;
+    color: white;
+    padding: 2%;
+    line-height: 220%;
+}
+
+.contact{
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.line1{
+    grid-column: 1/1;
+    grid-row: 2/2;
+    width: 50%;
+}
+
+.contact-text{
+    grid-column: 1/1;
+    grid-row: 3/3;
+}
+
+.about{
+    grid-column: 2/2;
+    grid-row: 1/1;
+}
+
+.line2{
+    grid-column: 2/2;
+    grid-row: 2/2;
+    width: 50%;
+}
+
+.about-text{
+    grid-column: 2/2;
+    grid-row: 3/3;
+}
+
+footer a:link{
+    color: #ffffff;
+}
+
+footer a:hover{
+    background-color: rgba(255, 255, 0, 0.562);
+}
+
+footer a:visited{
+    color: white;
+}
+
+/*OM FÃ„RDTJÃ„NST - UNDERSIDA*/
+
+.container2{
+    background-color: #D9D9D9;
+    margin: 10vh;
+    height: fit-content;
+    padding-bottom: 10%;
+    border-radius: 3vh;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
+}
+
+.title, .title-form2{
+    margin: 4%;
+    padding-top: 2%;
+    
+}
+
+.space{
+    padding: 2vh;
+}
+
+.collapsible{
+    background-color: #305D69;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 80%;
+    height: 10%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 2.5vh;
+
+    margin-left: 10%;
+    
+   
+}
+
+.active, .collapsible:hover{
+    background-color: #000000;
+}
+
+.content{
+    
+    padding-left: 3%;
+    width: 77%;
+    margin-left: 10%;
+    display: none;
+    overflow: hidden;
+    background-color: #305D69;
+    padding-bottom: 4%;
+    padding-top: 2%;
+}
+
+.article-text{
+    text-align: left;
+    color: white;
+    margin-top: 1vh;
+    margin-right: 50%;
+    font-size: 2vh;
+}
+
+article li{
+    list-style: circle;
+    color: white;
+    margin-bottom: 1vh;
+    font-size: 2vh;
+}
+
+.arrow{
+    width: 2%;
+    position: relative;
+    left: 85%;
+    
+}
+
+.collapsible:after{
+    content: "\2228";
+    font-size: 3vh;
+    float: right;
+    
+}
+
+.active:after{
+    content: "\2227";
+}
+
+/*Tabellen*/
+
+table{
+    border: solid black 2px;
+    border-collapse: collapse;
+}
+tr.even{
+    background-color: #929292;
+}
+
+tr.odd{
+    background-color: white;
+}
+
+th, td {
+    padding: 2%;
+    border: solid black 1px;
+}
+
+
+/*Kundservice ---------------------------------->*/
+
+.contact-container{
+    background-color: #D9D9D9;
+    margin: 10vh;
+    padding: 3%;
+    border-radius: 3vh;
+    height: fit-content;
+}
+
+.contact-box{
+    background-color: #305D69;
+    color: white;
+    margin: 10vh;
+    padding: 6%;
+    font-size: 3vh;
+}
+
+.contact-list{
+    list-style: circle;
+    margin-top: 4vh;
+    font-size: 2.5vh;
+}
+
+article p{
+    margin-bottom: 3vh;
+}
+
+.contact-box2{
+    background-color: #305D69;
+}
+
+.contact-form{
+    background-color: #000000;
+    padding: 3%;
+}
+
+#customer-btn{
+    border: none;
+    padding: 2%;
+    color: #000000;
+    background-color: white;
+}
+
+h4 {
+    margin-bottom: 1.5vh;
+}
+/*Forumen, boka resa sidan -------------------------------------> */
+.resa{
+    margin-left: 7%;
+}
+
+.title_form{
+    margin-right: 4%;
+}
+
+.yes{
+    margin-left: 2%;
+}
+
+.no{
+    margin-left: 10.8%;
+}
+
+#help, #help3{
+    padding: 3%;
+    font-size: 2vh;
+}
+
+#submit-btn, #submit-btn2, #submit-btn3, #submit-btn-mobile{
+    padding: 2% ;
+    padding-left: 4%;
+    padding-right: 4%;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    margin-top: 2vh;
+    border: black 2px solid;
+    font-size: 110%;
+    cursor: pointer;
+}
+
+/*GÃ¤ller alla forum pÃ¥ webbplatsen. */
+
+/*PÃ¥verkar hela forumet, sÃ¥ som bakgrund, font, storlek m.m. */
+form {
+    display: block;
+    margin: 0 auto;
+    background-color: #305D69;
+    width: 50vh;
+    height: fit-content;
+    padding-left: 3vh;
+    padding-bottom: 2%;
+    padding-top: 1%; 
+    color: white;
+    font-size: 2vh;
+}
+
+/*PÃ¥verkar alla inputfÃ¤lt*/
+input {
+    background: no-repeat;
+    background-position: 11vh;
+    background-color: #D9D9D9;
+    border: none;
+    background-color: white;
+}
+
+/*PÃ¥verkar alla inputfÃ¤rlt som har text. */
+input[type=text]{
+    width: 35vh;
+    font-size: large;
+    padding: 1%;
+}
+
+/*PÃ¥verkar datum inputfÃ¤ltet*/
+input#start {
+    cursor: pointer;
+    width: 15vh;
+    padding: 2%;
+}
+/*Textboxen lÃ¤ngst ner pÃ¥ forumet. */
+textarea{
+    resize: none;
+    width: 70%;
+    height: 11vh;
+}
+
+#extra{
+    display: none;
+}
+
+#Ã¥terkommande, #booked2{
+    display: none;
+}
+
+#time, #time3{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+#start3{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+/*BekrÃ¤ftelse efter bokning ------------------->*/
+.booked{
+    background-color: #305D69;
+    margin: 7vh;
+    height: fit-content;
+    padding: 4%;
+    color: white;
+    text-align: center;
+}
+
+.booked-title{
+    padding-top: 2%;
+}
+
+.booked-text{
+    font-size: 3vh;
+}
+
+/*Mina sidor --------------------------------------------------------------->*/
+
+.container-info{
+
+    background-color:#D9D9D9;
+    margin: 10vh;
+    height: fit-content;
+    border-radius: 3vh;
+
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.info-title{
+    background-color: #305D69;
+    color: white;
+    grid-column: 1/3;
+    border-radius: 3vh 3vh 0vh 0vh;
+    padding: 1%;
+    text-align: left;
+}
+
+.info-pic{
+    grid-column: 1/1;
+    grid-row: 2/2;
+    margin: 10%;
+
+    width: 30vh;
+    height: auto;
+}
+
+.info-text{
+    background-color: #305D69;
+    margin: 4vh;
+    font-size: 3vh;
+    color: white;
+    padding: 3%;
+}
+
+.re-title, .other-text, .other-text2{
+    font-size: 3vh;
+}
+
+.container-travels{
+    background-color: #D9D9D9;
+    margin: 10vh;
+    height: fit-content;
+    border-radius: 3vh;
+    padding: 3%;
+
+    display: grid;
+    grid-template-columns: 40% 40%;
+    column-gap: 20%;
+
+}
+
+.title-travels{
+    text-align: left;
+}
+
+.text-travels{
+    grid-column: 1/1;
+    padding-bottom: 10%;
+    font-size: 2vh;
+}
+
+.travel-box, .travel-box2, .travel-box3, .travel-box4, .travel-btn, .travel-btn1, .travel-btn-open{
+    font-size: 2vh;
+}
+
+.travel-box{
+    grid-column: 1/1;
+    grid-row: 3/3;
+    background-color: #305D69;
+    color: white;
+    margin: 3vh;
+    padding: 2vh;
+}
+
+.travel-box2{
+    grid-column: 1/1;
+    grid-row: 4/4;
+    background-color: #305D69;
+    color: white;
+    margin: 3vh;
+    padding: 2vh;
+}
+
+.travel-btn, #travel.btn, .travel-btn-open{
+    background-color: rgb(214, 3, 3);
+    color: white;
+    border: none;
+    padding: 2%;
+    padding-left: 3%; 
+    padding-right: 3%;
+    margin: 4%;
+    cursor: pointer;
+}
+
+.travel-btn-open:hover{
+    background-color: darkred;
+}
+
+.travel-btn1{
+    background-color: rgb(214, 129, 4);
+    color: white;
+    border: none;
+    padding: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin: 4%;
+    cursor: pointer;
+}
+
+.travel-btn1:hover{
+    background-color: rgb(161, 97, 1);
+}
+
+/*Ikonerna i knapparna*/
+.fa-trash-can, .fa-pen{
+    margin-right: 1.5vh;
+}
+
+.other-text{
+    grid-column: 2/2;
+    grid-row: 2/2;
+}
+
+.other-text2{
+    grid-column: 2/2;
+   grid-row: 4/4;
+}
+
+.travel-box3{
+    grid-column: 2/2;
+    grid-row: 3/3;
+    height: fit-content;
+    background-color: #305D69;
+    color: white;
+    margin: 3vh;
+    padding: 2vh;
+}
+
+.travel-box4{
+    grid-column: 2/2;
+    grid-row: 4/4;
+    height: fit-content;
+    background-color: #305D69;
+    color: #ffffff;
+    margin-top: 6vh;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    padding: 2vh;
+}
+
+/*Media queries -------------------->*/
+
+/*Mindre skÃ¤rmar, laptops*/
+@media screen and (min-width:900px) and (max-width: 1024px) {
+    
+    /*Startsidan*/
+
+    .icon-container{
+        right: 15%;
+    }
+
+    .login-btn{
+        right: 3%;
+        
+    }
+
+    .search-bar{
+        width: 18%;
+    }
+
+    .skip-btn{
+        left: 50%;
+    }
+
+    .info-pic{
+        width: 100% !important;
+    }
+
+}
+
+/*Mobiler, iPads, surfplattor*/
+@media screen and (min-width: 320px) and (max-width: 900px) {
+    .skip-btn, .tab-nav, .icon-container, .login-btn, .breadcrumbs, .form-desktop{
+        display: none;
+    }
+
+    .logo{
+        position: absolute;
+        width: 15vh;
+        z-index: 1;
+    }
+
+
+/*HuvudinnehÃ¥llet*/
+
+h2{
+    text-align: center;
+    font-size: 30px;
+}
+
+p{
+    font-size: 2vh;
+}
+
+.box{
+    height: 5em;
+}
+
+.container{
+    background-color: #ffffff;
+    margin: 0vh;
+    height: fit-content;
+    padding-top: 20%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    row-gap: 50px;
+    box-shadow: none; 
+    
+}
+
+.info-box1{
+    grid-row: 1/1;
+    grid-column: 1/3;
+    margin: 0%;
+    padding: 5%;
+    
+}
+
+.info-box2{
+    grid-row: 2/2;
+    grid-column: 1/3;
+    margin: 0%;
+    padding: 5%;
+}
+
+.info-box3{
+    grid-row: 3/3;
+    grid-column: 1/3;
+    margin: 0%;
+    padding: 5%;
+}
+
+.info-box4{
+    grid-row: 4/4;
+    grid-column: 1/3;
+    margin: 0%;
+    padding: 5%;
+}
+
+.box-text{
+    margin-left: 0%;
+    margin-right: 0%;
+    font-size: 2.5vh;
+}
+
+
+/*Fotnoten*/
+footer{
+    grid-template-columns: 100%;
+}
+
+.contact{
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.line1{
+    grid-column: 1/1;
+    grid-row: 2/2;
+    width: 50%;
+}
+
+.contact-text{
+    grid-column: 1/1;
+    grid-row: 3/3;
+}
+
+.about{
+    padding-top: 10%;
+    grid-column: 1/1;
+    grid-row: 4/4;
+}
+
+.line2{
+    grid-column: 1/1;
+    grid-row: 5/5;
+    width: 50%;
+}
+
+.about-text{
+    grid-column: 1/1;
+    grid-row: 6/6;
+}
+
+
+/*Mobil navigering*/
+
+.menu-text{
+    display: block;
+}
+
+
+nav {
+    background-color: #305D69;
+    font-size: 1.4em;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: none;
+}
+
+nav ul {
+    width: 100%;
+    position: absolute;
+    top: 8%;
+    list-style-type: none;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav li {
+    padding: 0.8em 0;
+    width: 100%;
+    background-color: white;
+    border: solid black 1px;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    padding: 0 1em;
+}
+
+nav li:hover {
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+/* Meny knapp, Ã¶ppna meny */
+.menu-btn {
+    display: flex;
+    align-items: center;
+    background-color: #305D69; 
+    top: 1%;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+}
+
+.open {
+    margin: 0 1em;
+}
+
+.menu-icon {
+    margin-right: 10px;
+}
+
+/* de tre svarta strecken (hamburg-icon) */
+.bars {
+    display: block;
+    width: 20px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+}
+
+.menu-text {
+    font-size: 1.3em;
+    color: rgb(255, 255, 255);
+}
+
+/* Meny knapp, stÃ¤ng */
+.close {
+    margin: 1em 1.5em;
+}
+
+/* Roterar tvÃ¥ lodrÃ¤da streck, till ett kryss */
+.cross1 {
+    width: 25px;
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+}
+
+.cross2 {
+    width: 25px;
+    transform: rotate(135deg);
+    position: relative;
+    top: -3px;
+}
+
+/*Meny ikoner*/
+
+.house-icon, .suitcase-icon, .user-icon, .phone-icon{
+    width: 7%;
+    padding-left: 2%;
+}
+
+.info-icon{
+    width: 3%;
+    padding-left: 4%;
+}
+
+/*OM FÃ„RDTJÃ„NST UNDERSIDA*/
+
+.container2{
+    background-color: white;
+    box-shadow: none;
+    margin: 0;
+}
+
+.title{
+    padding-bottom: 3%;
+}
+
+.collapsible{
+    font-size: 2vh;
+   
+}
+
+.article-text{
+    font-size: 2vh; 
+    padding: 5%;
+    margin-top: 1vh;
+    margin-right: 5%;
+    font-size: 2vh;
+}
+
+article li{
+    margin-right:4vh;
+    margin-bottom: 2.5vh;
+}
+
+/*FormulÃ¤ren ----------------------------------------->*/
+input[type=text]{
+    width: 25vh !important;
+    font-size: large;
+    padding: 5%;
+    margin-bottom: 2vh;
+   
+}
+
+input[type=date]{
+    margin-top: 3%;
+    padding: 5%;
+}
+
+input[type=time]{
+    margin-top: 3%;
+    padding: 5%;
+}
+
+select{
+    padding: 6%;
+}
+
+form{
+    max-width: 80% !important;
+    margin-top: 3vh !important;
+    padding-top: 2vh !important;
+    padding-bottom: 2vh !important;
+}
+
+.form-mobile{
+    display: block;
+}
+
+#mobile_form{
+    display: none;
+}
+
+input#start2{
+    padding: 1.5vh;
+    
+}
+
+
+/*Mina sidor ----------->*/
+.container-info{
+    background-color: white;
+    grid-template-columns: 100%;
+    margin: 0;
+    
+}
+
+.info-title{
+    color: #000000;
+    background-color: white;
+    text-align: center;
+    padding-top: 3vh;
+    
+}
+
+.info-text{
+    font-size: 2.7vh;
+}
+
+.info-pic, .title-travels, .text-travels{
+    display: none;
+}
+
+.container-travels{
+    margin: 0vh;
+    background-color: white;
+    grid-template-columns: 100%;
+    
+}
+
+.re-title{
+    background-color: #305D69;
+    text-align: center;
+    color: white;
+    padding: 2%;
+    grid-column: 1/1;
+    grid-row: 1/1;
+   
+}
+
+.travel-box{
+    grid-column: 1/1;
+    grid-row: 3/3;
+}
+
+.other-text{
+    text-align: center;
+    background-color: #305D69;
+    color: white;
+    padding: 2%;
+    grid-column: 1/1;
+    grid-row: 5/5;
+}
+
+.travel-box3{
+    grid-column: 1/1;
+    grid-row: 6/6 ;
+}
+
+.other-text2{
+    text-align: center;
+    background-color:#305D69;
+    color: white;
+    padding: 2%;
+    grid-column: 1/1;
+    grid-row: 7/7;
+}
+.travel-box4{
+    grid-column: 1/1;
+    grid-row: 8/8;
+}
+
+/*Kundservice ------------------------->*/
+.contact-container{
+    background-color: white;
+    margin: 0vh;
+    padding: 3%;
+    border-radius: 3vh;
+    height: fit-content;
+}
+
+.contact-box{
+    margin: 1vh; 
+}
+
+#id{
+    width: 20vh !important;
+}
+
+.contact-list{
+    font-size: 2vh;
+}
+
+}
+
+/*Media queries -------------------->*/

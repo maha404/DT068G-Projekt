@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="startsida.css">
+    <title>Sveriges Färdtjänst</title>
+</head>
+<body>
+
+<header>
+    <!--Logga-->
+    <figure>
+        <a href="startsida.html"><img class="logo" src="ikoner/Sveriges.png" alt=""></a>
+    </figure>
+
+    <!--Hoppa över innehåll-knapp-->
+    <a href="#start" class="skip-btn">Hoppa till innehållet</a>
+
+    <!--Ikoner-->
+    <div class="icon-container">
+        <img src="ikoner/phone-solid.svg" style="width: 3vh;" alt=""> 
+        <a href="kundservice.html">Kontakt</a>
+        <img src="ikoner/language-solid.svg" style="width: 3vh;" alt=""> 
+        <a href="#">Språk</a>
+    </div>
+ <button class="login-btn">Logga in</button>
+    <!--Navigeringen högst upp på sidan-->
+    <nav class="tab-nav">
+            <ul>
+                <li><a href="startsida.html" class="pressed" >Start</a></li>
+                <li><a href="omfardtjanst.html">Frågor och svar</a></li>
+                <li><a href="bokaresa.html">Boka resa</a></li>
+                <li><a href="minasidor.html">Mina sidor</a></li>
+                <li><a href="kundservice.html">Kundservice</a></li>
+         </ul>
+        <!--Sökrutan och knapp-->
+        <label for="search_box" class="search_text">Sökruta</label> 
+        <input type="search" name="search_box" id="search_box" placeholder= "skriv din sökfras" class="search-bar">
+        <button class="search-btn">Sök</button> 
+           
+    </nav>
+
+        <!--Menyns banner-->
+        <div class="box"></div>
+
+        <!--Mobil navigering-->
+        <button class="menu-btn open" id="open-menu" aria-expanded="false">
+            <span class="menu-icon">
+                <span class="bars"></span>
+                <span class="bars"></span>
+                <span class="bars"></span>
+            </span>
+            <span class="menu-text">Meny</span>
+        </button>
+
+        <nav id="nav-menu">
+            <button class="menu-btn close" id="close-menu" aria-expanded="false">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng</span>
+            </button>
+            <ul>
+                <li><img class="house-icon" src="ikoner/house-solid.svg" alt=""><a href="startsida.html">Start</a></li>
+                <li><img class="info-icon" src="ikoner/info-solid.svg" alt=""><a href="omfardtjanst.html">Frågor och svar</a></li>
+                <li><img class="suitcase-icon" src="ikoner/suitcase-solid.svg" alt="Ikon som föreställer en väska"><a href="bokaresa.html">Boka resa</a></li>
+                <li><img class="user-icon" src="ikoner/user-solid.svg" alt=""><a href="minasidor.html">Mina sidor</a></li>
+                <li><img class="phone-icon" src="ikoner/phone-solid.svg" alt=""><a href="kundservice.html">Kundservice</a></li>
+            </ul>
+        </nav>
+
+    <!--Brödsmulor-->
+    <nav>
+        <ul class="breadcrumbs">
+            <li> Du är här: <a href="startsida.html">Startsida</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+    <!--Huvudinnehållet-->
+    <main class="container" id="start">
+
+            <article class="info-box1" >
+                    <h1 class="box-title"><a href="startsida.html" class="box_link">Sveriges färdtjänst</a></h1>
+                <br>
+                    <p class="box-text">Färdtjänst är ett alternativ till dig som inte kan använda den vanliga kollektivtrafiken. Du kan använda färdtjänst för att handla, hälsa på släkt och vänner, hämta och lämna barn och mycket mer.</p>
+                    <p class="box-text">Med färdtjänst kan du åka hemifrån direkt till vald adress, du slipper därför en massa stopp och har plats för tex rullstol eller rullator.</p>
+            </article>
+
+            <article class="info-box2">
+                    <h2 class="box-title"><a href="bokaresa.html" class="box_link">Beställ din resa via "Boka resa"</a></h2>
+                    <br>
+                    <p class="box-text">Klicka på denna länk eller uppe i menyn på “boka resa”. Kom ihåg att du behöver vara inloggad för att kunna boka en resa. Om du behöver logga in så klickar du på “logga in” eller så kan du logga in genom att klicka på menyn och sedan in under “boka resa”.</p>
+                    <p class="box-text">Vill du ändra en resa så gör du det under “Mina sidor”.</p>
+            </article>
+
+            <article class="info-box3">
+                <h2><a href="omfardtjanst.html" class="box_link">Läs mer om färdtjänst</a></h2>
+                <br>
+                <p class="box-text">Under “Frågor och svar” kan du läsa mer om vad färdtjänst är och vad du ska göra för att få färdtjänst.</p>
+            </article>
+
+            <article class="info-box4">
+                <h2><a href="kundservice.html" class="box_link">Kundservice</a></h2>
+                <br>
+                <p class="box-text">Har du frågor eller andra synpunkter? Då kan du kontakta oss via telefon, mejl eller via ett formulär. </p>
+            </article>
+       
+    </main>
+    
+    <!--Fotnot-->
+    <footer>
+        <h3 class="contact">Kontakta oss</h3>
+        <hr class="line1">
+        <p class="contact-text">sverigesfardtjanst@ex.se <br> Tel: 0771-11 22 33</p>
+        <h3 class="about">Om webbplatsen</h3>
+        <hr class="line2">
+        <p class="about-text"> <a href="kundservice.html">Tillgänglighetsredogörelse</a> <br> <a href="kundservice.html">Rapportera fel på webbplatsen</a></p>
+    </footer>
+
+<script src="index.js"></script>
+</body>
+</html>

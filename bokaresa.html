@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="startsida.css">
+    <title>Sveriges färdtjänst</title>
+</head>
+<body>
+    
+    <header>
+        <!--Logga-->
+        <figure>
+            <a href="startsida.html"> <img src="ikoner/Sveriges.png"  alt="" class="logo"></a>
+        </figure>
+    
+        <!--Hoppa över innehåll-knapp-->
+        <a href="#start_main" class="skip-btn">Hoppa till innehållet</a>
+    
+        <!--Ikoner-->
+    <figure class="icon-container">
+        <img src="ikoner/phone-solid.svg" style="width: 3vh;" alt=""> 
+        <a href="kundservice.html">Kontakt</a>
+        <img src="ikoner/language-solid.svg" style="width: 3vh;" alt=""> 
+        <a href="#">Språk</a>
+    </figure>
+    
+        <!--Navigeringen högst upp på sidan-->
+        <nav class="tab-nav">
+    
+            <button class="login-btn">Logga in</button>
+            <ul>
+                <li><a href="startsida.html">Start</a></li>
+                <li><a href="omfardtjanst.html">Frågor och svar</a></li>
+                <li><a href="bokaresa.html" class="pressed">Boka resa</a>
+                <li><a href="minasidor.html">Mina sidor</a></li>
+                <li><a href="kundservice.html">Kundservice</a></li>
+           </ul>
+            <!--Sökrutan och knapp-->
+            <label for="search_box" class="search_text">Sökruta</label>
+            <input type="search" name="search" id="search_box" placeholder= "skriv din sökfras" class="search-bar">
+            <button class="search-btn">Sök</button> 
+               
+        </nav>
+    
+            <!--Menyns banner-->
+            <div class="box"></div>
+    
+            <!--Mobil navigering-->
+            <button class="menu-btn open" id="open-menu">
+                <span class="menu-icon">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu-text">Meny</span>
+            </button>
+    
+            <nav id="nav-menu">
+                <button class="menu-btn close" id="close-menu">
+                    <span class="menu-icon">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menu-text">Stäng</span>
+                </button>
+                <ul>
+                    <li><img class="house-icon" src="ikoner/house-solid.svg" alt=""><a href="startsida.html">Start</a></li>
+                    <li><img class="info-icon" src="ikoner/info-solid.svg" alt=""><a href="omfardtjanst.html">Frågor och svar</a></li>
+                    <li><img class="suitcase-icon" src="ikoner/suitcase-solid.svg" alt=""><a href="bokaresa.html">Boka resa</a></li>
+                    <li><img class="user-icon" src="ikoner/user-solid.svg" alt=""><a href="minasidor.html">Mina sidor</a></li>
+                    <li><img class="phone-icon" src="ikoner/phone-solid.svg" alt=""><a href="kundservice.html">Kundservice</a></li>
+                </ul>
+            </nav>
+    
+        <!--Brödsmulor-->
+        <nav>
+            <ul class="breadcrumbs">
+                <li class="bread-item"> Du är här: <a href="startsida.html">Startsida</a></li>
+                <li class="bread-item"><a>Boka resa</a></li>
+            </ul>
+        </nav>
+    
+    </header>
+
+
+<!--Formulär 1 - Boka en vanlig enkelresa-->
+<main class="container2" id="start_main">
+
+    <h1 class="title" id="booked">Boka resa</h1>
+    <h1 class="title-form2" id="booked2">Boka återkommande resa</h1>
+
+<form autocomplete="on" class="form-desktop" id="form-desktop" action="resabokad.html">
+
+        <fieldset>
+                <p>Jag vill:</p>
+                <input type="radio" id="boka_resa" name="resa">
+                <label for="boka_resa">Boka enkelresa</label>
+                <br>
+                <input type="radio" id="boka_återkommande_resa" name="resa" value="">
+                <label for="boka_återkommande_resa">Boka återkommande resa</label>
+        </fieldset>
+        
+                                <div id="återkommande">
+                                <br>
+                                    <fieldset>
+                                        <legend>Hur ofta ska resan ske?</legend>
+                                            <input type="radio" name="boka resa" id="time4" class="time">
+                                            <label for="time4" class="title_form">Varje vecka</label> 
+                                            <input type="radio" name="boka resa" id="time5" class="time2">
+                                            <label for="time5" class="title_form">Varje månad</label>
+                                    </fieldset>
+                                <br>
+
+                                    <div>
+                                        <fieldset>
+                                            <label for="start3">Välj vilka dagar du vill åka:</label>
+                                            <input type="date" id="start3" name="start-resa"> 
+                                        </fieldset>
+                                    </div>
+
+                                    <br>
+                                    <fieldset>
+                                    <legend>Resan dit: </legend>
+                                    <label for="from_adress_re">Från adress: Ange gatuadress och nummer</label>
+                                    <br>
+                                    <input type="text" id="from_adress_re">
+                                    <br>
+                                    <br>
+                                    <label for="to_adress_re">Till adress: Ange gatuadress och nummer</label>
+                                    <br>
+                                    <input type="text" id="to_adress_re">
+                                    <br>
+                                    <br>
+                                    </fieldset>
+                                    <fieldset>
+                                        <legend>Resan tillbaka: </legend>
+                                        <div class="from-adress">
+                                            <label for="from-ad">Från adress: Ange gatuadress och nummer</label> 
+                                            <br>
+                                            <input type="text" id="from-ad"> 
+                                        </div>
+                                        <br>
+                                        <div class="to-adress">
+                                            <label for="to-ad">Till adress: Ange gatuadress och nummer</label>
+                                            <br>
+                                            <input type="text" id="to-ad">
+                                        </div>
+                                    </fieldset>
+                                    <br>
+                                    <fieldset>
+                                        <label for="time">Avgångstid:</label>
+                                        <input type="time" id="time" name="time">
+                                    </fieldset>
+                                    
+                                    <br>
+                                    <fieldset>
+                                        <p>Ledsagare/medresenär: </p>
+                                            <input type="checkbox" id="travelers" name="travelers" value="0">
+                                            <label for="travelers">0</label>
+                                        <br>
+                                            <input type="checkbox" id="travelers1" name="travelers" value="1"> 
+                                            <label for="travelers1">1 st</label>
+                                        <br>
+                                            <input type="checkbox" id="travelers2" name="travelers" value="2">
+                                            <label for="travelers2">2 st</label>
+                                    </fieldset>
+                                    <br>
+                                    
+                                    <label for="help">Hjälpmedel:</label>
+                                    <br>
+                                    <select name="help-needed" id="help">
+                                        <option value="">Inget hjälpmedel</option>
+                                        <option value="">Rullstol</option>
+                                        <option value="">Kryckor</option>
+                                        <option value="">Elrullstol</option>
+                                    </select>
+                                    <br>
+                                    <br>
+                                    <fieldset>
+                                    <p>Service av chauffören: </p>
+                                            <input type="radio" id="service" name="service" value="ja"> 
+                                            <label for="service">Ja</label>
+                                        <br>
+                                            <input type="radio" id="service2" name="service" value="nej"> 
+                                            <label for="service2">Nej</label>
+                                    </fieldset>
+                                    <br>
+                                    <label for="text-area">Vad för service vill du ha av chauffören?</label> 
+                                    <br>
+                                    <br>
+                                    <textarea name="text" id="text-area" cols="30" rows="10" placeholder="Skriv här..."></textarea>
+                                    <br>
+                                    <br>
+                                    <button id="submit-btn" >Boka resa</button>
+                                    <!--<input type="button" value="Boka resa" id="submit-btn">-->
+                                </div>
+<div id="travel-booked">
+        
+        <fieldset>
+                <label for="from_adress">Från adress: Ange gatuadress och nummer</label><br>
+                <input type="text" id="from_adress" name="from_adress">
+            <br>
+            <br>
+                <label for="to_adress">Till adress: Ange gatuadress och nummer</label><br>
+                <input type="text" id="to_adress" name="to_adress">
+        </fieldset>
+    <br>
+        <fieldset>
+            <label for="start">Datum: </label>
+            <br>
+            <input type="date" id="start" name="start-resa"> 
+        </fieldset>
+        <br>
+        <fieldset>
+            <label for="time3">Avgångstid:</label>
+            <input type="time" id="time3" name="time">
+        </fieldset> 
+<br>
+<br>
+       <fieldset>
+            <legend>Vill du boka en returresa?</legend>
+                    <input type="radio" id="ja" name="retur_resa">
+                    <label for="ja">Ja</label>
+                <br>
+                    <input type="radio" id="nej" name="retur_resa">
+                    <label for="nej">Nej</label>
+       </fieldset>
+<div>
+
+</div>
+
+    <div id="extra">
+        <br>
+        <p>Boka din returresa: </p>
+        <br>
+            <label for="from_adress_extra">Från adress: Ange gatuadress och nummer</label>
+            <br>
+            <input type="text" id="from_adress_extra" name="from_adress">
+            <br>
+            <br>
+            <label for="to_adress_extra">Till adress: Ange gatuadress och nummer</label><br>
+            <input type="text" id="to_adress_extra" name="to_adress">          
+            <br>
+            <br>
+                <fieldset>
+                    <label for="time_extra">Avgångstid:</label>                                    
+                    <input type="time" id="time_extra" name="start-resa"> 
+            </fieldset>
+    </div>
+
+<br>
+        <fieldset>
+            <legend>Ledsagare/medresenär: </legend>
+                <input type="checkbox" id="travelers3" name="travelers" value="0">
+                <label for="travelers3">0</label>
+            <br>
+                <input type="checkbox" id="travelers4" name="travelers" value="1"> 
+                <label for="travelers4">1 st</label>
+            <br>
+                <input type="checkbox" id="travelers5" name="travelers" value="2">
+                <label for="travelers5">2 st</label>
+        </fieldset>
+        <br>
+            <fieldset>
+                <label for="help3">Hjälpmedel: </label>
+                <select name="help-needed" id="help3">
+                    <option value="">Inget hjälpmedel</option>
+                    <option value="">Rullstol</option>
+                    <option value="">Kryckor</option>
+                    <option value="">Elrullstol</option>
+                </select>
+            </fieldset>
+        <br>
+            <fieldset>
+                <legend >Vill du ha service av chauffören?</legend>
+                    <input type="radio" id="service_re" name="service" value="ja"> 
+                    <label for="service_re">Ja</label>
+                <br>
+                    <input type="radio" id="service_re2" name="service" value="nej"> 
+                    <label for="service_re2">Nej</label>
+            </fieldset>
+        <br>
+
+        <label for="text-area4">Vad för service vill du ha av chauffören?</label> 
+        <br>
+        <br>
+        <textarea name="text" id="text-area4" cols="30" rows="10" placeholder="Skriv här..."></textarea>
+        <br>
+        <br>
+        <!--Bokaknapp-->
+        <input type="submit" value="Boka resa" id="submit-btn3" >
+        
+</div> 
+</form>
+
+<form autocomplete="on" class="form-mobile" id="form-mobile" action="resabokad.html"> 
+        
+    <fieldset>
+            <legend>Jag vill:</legend>
+                <br>
+                    <input type="radio" id="boka_resa_mobil" name="resa" value="">
+                    <label for="boka_resa_mobil">Boka enkelresa</label>
+                <br>
+                    <input type="radio" id="boka_återkommande_resa_mobil" name="resa" value="">
+                    <label for="boka_återkommande_resa_mobil">Boka återkommande resa</label>
+    </fieldset>
+<br>
+
+                <div id="form-mobile-återkommande">
+                    <fieldset>
+                        <legend>Hur ofta ska resan ske?</legend>
+                        <input type="radio" id="varje_vecka" name="återkommande">
+                        <label for="varje_vecka">Varje vecka</label>
+                        <input type="radio" id="varje_månad" name="återkommande">
+                        <label for="varje_månad">Varje månad</label>
+                    </fieldset>
+                <br>
+                <fieldset>
+                    <label for="date_mobile">Välj vilka dagar du vill åka:</label>
+                    <input type="date" id="date_mobile">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Resan dit: </legend>
+                    <label for="mobile_to_adress">Från adress: </label>
+                    <br>
+                    <input type="text" id="mobile_to_adress">
+                    <br>
+                    <label for="mobile_from_adress">Till adress: </label>
+                    <br>
+                    <input type="text" id="mobile_from_adress">
+                </fieldset>
+                
+                <fieldset>
+                    <label for="time_mobile">Avgångstid:</label>
+                    <br>
+                    <input type="time" id="time_mobile" name="start-resa"> 
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Resan tillbaka: </legend>
+                        <label for="mobile_from_adress2">Från adress:</label>
+                        <br>
+                        <input type="text" id="mobile_from_adress2">
+                        <br>
+                        <label for="mobile_to_adress2">Till adress:</label>
+                        <br>
+                        <input type="text" id="mobile_to_adress2">
+                </fieldset>
+                <br>
+                <fieldset>
+                    <label for="time_mobile2">Avgångstid:</label>
+                    <br>
+                    <input type="time" id="time_mobile2" name="start-resa"> 
+                </fieldset>
+                <br>
+                <fieldset>
+                    <label for="pass2">Ledsagare/medresenär:</label>
+                    <br>
+                    <select name="passengers" id="pass2">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                    </select>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <label for="help_mobile">Hjälpmedel:</label>
+                    <br>
+                    <select name="help-needed" id="help_mobile">
+                        <option value="">Inget hjälpmedel</option>
+                        <option value="">Rullstol</option>
+                        <option value="">Kryckor</option>
+                        <option value="">Elrullstol</option>
+                    </select>
+                </fieldset>
+                <br>
+                    <fieldset>
+                        <legend>Service av chauffören: </legend>
+                        <input type="radio" id="service5" name="service" value="ja"> 
+                        <label for="service5">Ja</label>
+                    <br>
+                        <input type="radio" id="service6" name="service" value="nej"> 
+                        <label for="service6">Nej</label>
+                    </fieldset>
+            <br>
+            <fieldset>
+                <label for="text-area_mobile">Vad för service vill du ha av chauffören? </label><br>
+                <textarea name="text" id="text-area_mobile" cols="30" rows="10" placeholder="Skriv här..."></textarea>
+            </fieldset>
+            <br>
+            <br>
+           <!--Skickaknapp-->
+            <input type="submit" value="Boka resa" id="submit-btn-mobile">
+    </div>
+
+
+<div id="mobile_form">
+        <fieldset>
+            <label for="start2"> Datum: </label>
+            <input type="date" id="start2" name="start-resa"> 
+        </fieldset>
+        <fieldset>
+            <label for="from_adress_mobile">Från adress:</label><br>
+            <input type="text" id="from_adress_mobile" name="from_adress">
+        </fieldset>
+        <fieldset>
+            <label for="time2" class="time-mobile">Avgångstid:</label>
+            <br>
+            <input type="time" id="time2" name="start-resa"> 
+        </fieldset>
+        <fieldset>
+            <label for="to_adress2">Till adress:</label><br>
+            <input type="text" id="to_adress2" name="to_adress">
+        </fieldset>
+        <fieldset>
+            <label for="help2">Hjälpmedel:</label>
+            <br>
+            <select name="help-needed" id="help2">
+                <option value="">Inget hjälpmedel</option>
+                <option value="">Rullstol</option>
+                <option value="">Kryckor</option>
+                <option value="">Elrullstol</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <label for="pass">Passagerare:</label>
+            <br>
+            <select name="passengers" id="pass">
+                <option value="">0</option>
+                <option value="">1</option>
+                <option value="">2</option>
+            </select>
+        </fieldset>
+        <br>
+            <fieldset>
+                <legend>Service av chauffören: </legend>
+                    <input type="radio" id="service4" name="service" value="ja"> 
+                    <label for="service4">Ja</label>
+                <br>
+                    <input type="radio" id="service3" name="service" value="nej"> 
+                    <label for="service3">Nej</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <label for="text-area2">Vad för service vill du ha av chauffören? </label><br>
+                <textarea name="text" id="text-area2" cols="30" rows="10" placeholder="Skriv här..."></textarea>
+            </fieldset>
+            <br>
+
+           <!--Skickaknapp-->
+            <input type="submit" value="Boka resa" id="submit-btn2">
+            
+</div>
+</form>
+
+</main>
+
+<footer>
+    <h3 class="contact">Kontakta oss</h3>
+    <hr class="line1">
+    <p class="contact-text">sverigesfardtjanst@ex.se <br> Tel: 0771-11 22 33</p>
+    <h3 class="about">Om webbplatsen</h3>
+    <hr class="line2">
+    <p class="about-text"> <a href="kundservice.html">Tillgänglighetsredogörelse</a> <br> <a href="kundservice.html">Rapportera fel på webbplatsen</a></p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>

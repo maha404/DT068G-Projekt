@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="startsida.css">
+    <title>Sveriges färdtjänst</title>
+</head>
+<body>
+
+    <header>
+        <!--Logga-->
+        <figure>
+            <a href="startsida.html"><img src="ikoner/Sveriges.png"  alt="" class="logo"></a>
+        </figure>
+    
+        <!--Hoppa över innehåll-knapp-->
+        <a href="#start" class="skip-btn">Hoppa till innehållet</a>
+    
+        <!--Ikoner-->
+    <figure class="icon-container">
+        <img src="ikoner/phone-solid.svg" style="width: 3vh;" alt=""> 
+        <a href="kundservice.html">Kontakt</a>
+        <img src="ikoner/language-solid.svg" style="width: 3vh;" alt=""> 
+        <a href="#">Språk</a>
+    </figure>
+     <button class="login-btn">Logga in</button>
+        <!--Navigeringen högst upp på sidan-->
+        <nav class="tab-nav">
+
+            <ul>
+                <li><a href="startsida.html">Start</a></li>
+                <li><a href="omfardtjanst.html" class="pressed">Frågor och svar</a></li>
+                <li><a href="bokaresa.html">Boka resa</a></li>
+                <li><a href="minasidor.html">Mina sidor</a></li>
+                <li><a href="kundservice.html">Kundservice</a></li>
+            </ul>
+           
+            <!--Sökrutan och knapp-->
+            <label for="search_box" class="search_text">Sökruta</label>
+            <input type="search" name="search" id="search_box" placeholder= "skriv din sökfras" class="search-bar">
+            <button class="search-btn">Sök</button> 
+               
+        </nav>
+    
+            <!--Menyns banner-->
+            <div class="box"></div>
+    
+            <!--Mobil navigering-->
+            <button class="menu-btn open" id="open-menu">
+                <span class="menu-icon">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu-text">Meny</span>
+            </button>
+    
+            <nav id="nav-menu">
+                <button class="menu-btn close" id="close-menu">
+                    <span class="menu-icon">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menu-text">Stäng</span>
+                </button>
+                <ul>
+                    <li><img class="house-icon" src="ikoner/house-solid.svg" alt="Ikon som föreställer ett hus"><a href="startsida.html">Start</a></li>
+                    <li><img class="info-icon" src="ikoner/info-solid.svg" alt="Ikon som föreställer ett i"><a href="omfardtjanst.html">Frågor och svar</a></li>
+                    <li><img class="suitcase-icon" src="ikoner/suitcase-solid.svg" alt="Ikon som föreställer en väska"><a href="bokaresa.html">Boka resa</a></li>
+                    <li><img class="user-icon" src="ikoner/user-solid.svg" alt="Ikon som föreställer en person"><a href="minasidor.html">Mina sidor</a></li>
+                    <li><img class="phone-icon" src="ikoner/phone-solid.svg" alt="Ikon som föreställer en telefon"><a href="kundservice.html">Kundservice</a></li>
+                </ul>
+            </nav>
+    
+        <!--Brödsmulor-->
+        <nav>
+            <ul class="breadcrumbs">
+                <li class="bread-item"> Du är här: <a href="startsida.html">Startsida</a></li>
+                <li class="bread-item"><a>Frågor och svar</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main class="container2" id="start">
+        <section aria-label="frågor och svar om färdtjänst">
+        <h1 class="title">Frågor och svar</h1>
+
+        <button aria-expanded="false" aria-controls="question1"  type="button" class="collapsible" >Kan jag få färdtjänst?</button>
+        <article class="content" id="question1">
+            <h2 class="article-text">Kan jag få färdtjänst?</h2>
+           
+            <p class="article-text">Du som har stora svårigheter med att flytta dig på egen hand eller har svårt med att använda vanliga bussar eller annat i kollektivtrafiken kan bli beviljad färdtjänst.
+                Din funktionsnedsättning behöver också ha funnits ett längre tag, minst 6 månader och förväntas fortsätta.
+            </p>
+            <p class="article-text">Du som även går igenom någon form av rehabilitering kan också bli beviljad färdtjänst.</p> 
+        </article>
+
+        <div class="space"></div>
+
+        <button  aria-expanded="false" aria-controls="question1" type="button" class="collapsible">Hur ansöker jag om färdtjänst?</button>
+        <article class="content">
+            <h2 class="article-text">Hur ansöker jag om färdtjänst?</h2>
+            <p class="article-text">Först ansöker du om färdtjänst inom den kommun där du bor. Oftast behöver du ett läkarintyg som visar att du har svårigheter med att förflytta dig i kollektivtrafiken.</p> 
+            <p class="article-text">Efter att du har skickat in din ansökan till en handläggare på kommunen så görs en bedömning av färdtjänstbehovet innan ett beslut tas.</p> 
+        </article>
+
+        <div class="space"></div>
+
+        <button aria-expanded="false" aria-controls="question1" type="button" class="collapsible">Vad händer när jag får färdtjänsttillståndet?</button>
+        <article class="content">
+            <h2 class="article-text">Vad händer när jag får färdtjänsttillståndet?</h2>
+            <p class="article-text">Efter att du blivit beviljat ditt färdtjänsttillstånd så får du ett tillstånd och ett färdtjänstkort.</p>
+            <p class="article-text">Färdtjänstkortet är personligt och gäller en viss tid eller tillsvidare. Kortet är också kopplat till vissa regler: </p>
+            <ul>
+                <li>Vilket färdsätt som du får resa med. Detta kan vara tillexempel en buss som har plats för rullstol.
+                </li>
+                <li>Hur många resor som du får göra. Kan vara att du endast får använda färdtjänst i begränsat antal resor eller <br>att du endast får använda färdtjänst under en viss del av året. 
+                </li>
+                <li>Vilket område du får resa inom. Kan vara inom din kommun, mellan olika kommuner eller inom ett län.
+                </li>
+            </ul>   
+        </article>
+
+        <div class="space"></div>
+
+        <button aria-expanded="false" aria-controls="question1" type="button" class="collapsible">Hur mycket kostar färdtjänst?</button>
+        <article class="content">
+            <h2 class="article-text">Hur mycket kostar färdtjänst?</h2>
+            <p class="article-text">Färdtjänst kostar olika beroende på hur många zoner som du åker igenom. Nedan finner du en tabell över hur mycket det kan kosta. Avgiften betalas direkt till chauffören vid påbörjad färdtjänstresa. </p>
+            <table>
+
+                <tr class="odd">
+                    <th>Antal Zoner</th>
+                    <th>Vuxen*</th>
+                    <th>Barn och ungdom**</th>
+                </tr>
+
+                <tr class="even">
+                    <td>1</td>
+                    <td>55 kronor</td>
+                    <td>30 kronor</td>
+                </tr>
+
+                <tr class="odd">
+                    <td>2</td>
+                    <td>70 kronor</td>
+                    <td>35 kronor</td>
+                </tr>
+
+                <tr class="even">
+                    <td>3</td>
+                    <td>90 kronor</td>
+                    <td>45 kronor</td>
+                </tr>
+
+                <tr class="odd">
+                    <td>4</td>
+                    <td>105 kronor</td>
+                    <td>55 kronor</td>
+                </tr>
+
+                <tr class="even">
+                    <td>5</td>
+                    <td>130 kronor</td>
+                    <td>65 kronor</td>
+                </tr>
+
+                <tr class="odd">
+                    <td>6</td>
+                    <td>150 kronor</td>
+                    <td>75 kronor</td>
+                </tr>
+                
+                <tr class="even">
+                    <td>7</td>
+                    <td>170 kronor</td>
+                    <td>85 kronor</td>
+                </tr>
+
+                <tr class="odd">
+                    <td>8</td>
+                    <td>190 kronor</td>
+                    <td>95 kronor</td>
+                </tr>
+
+                <tr class="even">
+                    <td>9</td>
+                    <td>205 kronor</td>
+                    <td>105 kronor</td>
+                </tr>
+
+
+            </table>
+
+            <p class="article-text" >* Gäller från och med den dagen du fyller 20 år <br> **Gäller till den dag som du fyllt 20 år.</p>
+        </article>
+
+        <div class="space"></div>
+
+        <button aria-expanded="false" aria-controls="question1" type="button" class="collapsible">Får jag ha med mig någon medresenär? </button>
+        <article class="content">
+            <h2 class="article-text">Får jag ha med mig någon medresenär?</h2>
+            <p class="article-text">Ja det får du. En medresenär kan vara en kompis, släkting, någon annan som man umgås med eller någon som ska resa till samma ställe som du själv. </p>
+            <p class="article-text">Hos oss får du ta med en medresenär som betalar samma avgift som dig med färdtjänst och påbörjar och avslutar resan tillsammans med dig.  Medresenären får inte ha några egna hjälpmedel och ska inte orsaka extra service för chauffören.  </p>
+        </article>
+
+        <div class="space"></div>
+
+        <button aria-expanded="false" aria-controls="question1" type="button" class="collapsible">Vilka olika resor kan jag göra?</button>
+        <article class="content">
+            <h2 class="article-text">Vilka olika resor kan jag göra?</h2>
+            <p class="article-text">Det finns olika resor som du kan och inte kan göra med färdtjänst. Nedanför beskriver vi vad som gäller vid olika typer av resor och hur du går tillväga om du behöver resa på ett visst sätt.</p>
+            <h3 class="article-text">Privatresor</h3>
+            <ul class="article-text">
+                <li class="article-text">Privatresor är de resor som du gör till släkt och vänner, om du ska gå på bio eller om du vill åka och shoppa. Privatresor gäller också om du är medlem i något föreningsliv och går på möten eller om du deltar i andra aktiviteter. </li>
+            </ul>
+            <h3 class="article-text">Arbetsresor</h3>
+            <ul class="article-text">
+                <li class="article-text">Arbetsresor kan du söka specifikt för, arbetsresekort för vissa arbetsinriktade studier. </li>
+            </ul>
+            <h3 class="article-text">Sjukresor</h3>
+            <ul class="article-text">
+                <li class="article-text">Tyvärr kan du inte använda färdtjänst vid sjukresor. Om du behöver åka till tandläkaren, sjukhusvård med mera så gäller andra regler. </li>
+            </ul>
+        </article>
+</section>
+    </main>
+
+    <footer>
+        <h3 class="contact">Kontakta oss</h3>
+        <hr class="line1">
+        <p class="contact-text">sverigesfardtjanst@ex.se <br> Tel: 0771-11 22 33</p>
+        <h3 class="about">Om webbplatsen</h3>
+        <hr class="line2">
+        <p class="about-text"> <a href="kundservice.html">Tillgänglighetsredogörelse</a> <br> <a href="kundservice.html">Rapportera fel på webbplatsen</a></p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

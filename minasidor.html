@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f2e33cb8e2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="startsida.css">
+    <link rel="stylesheet" href="modal.css">
+    <title>Sveriges Färdtjänst</title>
+</head>
+<body>
+    
+    <header>
+        <!--Logga-->
+        <figure>
+            <a href="startsida.html"><img src="ikoner/Sveriges.png"  alt="" class="logo"></a>
+        </figure>
+    
+        <!--Hoppa över innehåll-knapp-->
+        <a href="#start" class="skip-btn">Hoppa till innehållet</a>
+    
+        <!--Ikoner-->
+    <figure class="icon-container">
+        <img src="ikoner/phone-solid.svg" style="width: 3vh;" alt=""> 
+        <a href="kundservice.html">Kontakt</a>
+        <img src="ikoner/language-solid.svg" style="width: 3vh;" alt=""> 
+        <a href="#">Språk</a>
+    </figure>
+    
+        <!--Navigeringen högst upp på sidan-->
+        <nav class="tab-nav">
+    
+            <button class="login-btn">Logga in</button>
+            <ul>
+                <li><a href="startsida.html" >Start</a></li>
+                <li><a href="omfardtjanst.html" >Frågor och svar</a></li>
+                <li><a href="bokaresa.html">Boka resa</a></li>
+                <li><a href="minasidor.html" class="pressed">Mina sidor</a></li>
+                <li><a href="kundservice.html">Kundservice</a></li>
+         </ul>
+           
+            <!--Sökrutan och knapp-->
+            <label for="search_box" class="search_text">Sökruta</label>
+            <input type="search" name="search" id="search_box" placeholder= "skriv din sökfras" class="search-bar">
+            <button class="search-btn">Sök</button> 
+               
+        </nav>
+    
+            <!--Menyns banner-->
+            <div class="box"></div>
+    
+            <!--Mobil navigering-->
+            <button class="menu-btn open" id="open-menu">
+                <span class="menu-icon">
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                    <span class="bars"></span>
+                </span>
+                <span class="menu-text">Meny</span>
+            </button>
+    
+            <nav id="nav-menu">
+                <button class="menu-btn close2" id="close-menu">
+                    <span class="menu-icon">
+                        <span class="bars cross1"></span>
+                        <span class="bars cross2"></span>
+                    </span>
+                    <span class="menu-text">Stäng</span>
+                </button>
+                <ul>
+                    <li><img class="house-icon" src="ikoner/house-solid.svg" alt=""><a href="startsida.html">Start</a></li>
+                    <li><img class="info-icon" src="ikoner/info-solid.svg" alt=""><a href="omfardtjanst.html">Frågor och svar</a></li>
+                    <li><img class="suitcase-icon" src="ikoner/suitcase-solid.svg" alt=""><a href="bokaresa.html">Boka resa</a></li>
+                    <li><img class="user-icon" src="ikoner/user-solid.svg" alt=""><a href="minasidor.html">Mina sidor</a></li>
+                    <li><img class="phone-icon" src="ikoner/phone-solid.svg" alt=""><a href="kundservice.html">Kundservice</a></li>
+                </ul>
+            </nav>
+    
+        <!--Brödsmulor-->
+        <nav>
+            <ul class="breadcrumbs">
+                <li class="bread-item"> Du är här: <a href="startsida.html">Startsida</a></li>
+                <li class="bread-item"><a>Mina sidor</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+<main id="start">
+    <article class="container-info">
+        <h1 class="info-title">Mina sidor</h1>
+        <p class="info-text">Namn: Greta <br> Efternamn: Larsson <br> Mejladress: greta70@gmail.com <br><br>Hemadress: Storgatan 6, 83244 Hudiksvall</p>
+        <img src="ikoner/profile.jpg" alt="profilbild" class="info-pic">
+    </article>
+    
+    <article class="container-travels">
+        <section>
+            <h2 class="title-travels">Dina bokade resor</h2>
+            <p class="text-travels">Här ser du alla dina bokade resor, du kan även avboka och ändra dina resor.</p>
+        </section>
+        <br>
+        <h3 class="re-title">Återkommande resor: </h3>
+        <br>
+        <section class="travel-box">
+            <h3>Resa nummer 1</h3>
+            <br>
+            <p>Sker varje vardag, måndag till fredag <br><br> Resan dit: <br> Storgatan 6-8 till Västra tullgatan 13 <br> Avgång: kl.08:00 <br><br> Resan tillbaka: <br> Västra tullgatan 13 till Storgatan 6-8 <br> Avgång: 17:00</p>
+            <br>
+            <button id="remove-btn3" class="travel-btn-open"><i class="fa-solid fa-trash-can"></i>Avboka resa</button>
+            <button class="travel-btn1" name="ändra resan"><i class="fa-solid fa-pen"></i>Ändra resa</button>
+        </section>
+        <br>
+        <section class="travel-box2">
+            <h3>Resa nummer 2</h3>
+            <br>
+            <p >Sker varje vardag, måndag till fredag <br><br> Resan dit: <br> Storgatan 6-8 till Västra tullgatan 13 <br> Avgång: kl.08:00 <br><br> Resan tillbaka: <br> Västra tullgatan 13 till Storgatan 6-8 <br> Avgång: 17:00</p>
+            <br>
+            <!--<button class="travel-btn" id="remove_travel" name="avboka resa"><i class="fa-solid fa-trash-can"></i>Avboka resa</button>-->
+            <button id="remove-btn1" class="travel-btn-open"><i class="fa-solid fa-trash-can"></i>Avboka resa</button>
+            <button class="travel-btn1" id="change_travel" name="ändra resan"><i class="fa-solid fa-pen"></i>Ändra resa</button>
+        </section>
+
+        <h3 class="other-text">Kommande resor: </h3>
+        <section class="travel-box3">
+            <h3>Resa nummer 3</h3>
+            <br>
+            <p>Datum: 2022-12-15 <br><br> Resan dit: <br> Storgatan 6-8 till Västra tullgatan 13 <br> Avgång: kl.13:00 </p>
+            <br>
+            <button id="remove-btn" class="travel-btn-open"><i class="fa-solid fa-trash-can"></i>Avboka resa</button>
+            <div class="modal" id="myModel">
+                <div class="modal-content">
+                    <p>Vill du verkligen avboka denna resa?</p>
+                    <button class="travel-btn" id="remove_btn"><i class="fa-solid fa-trash-can"></i>Avboka resan</button><button id="regret_btn"><i class="fa-solid fa-xmark"></i>Stäng</button>
+                </div>
+            </div>
+            <button class="travel-btn1" id="change_travel2" name="ändra resan"><i class="fa-solid fa-pen"></i>Ändra resa</button>
+        </section>
+
+        <h3 class="other-text2">Tidigare resor:</h3>
+        <section class="travel-box4">
+            <h3>Denna resa gjordes</h3>
+            <br>
+            <p>Datum: 2022-12-15 <br><br> Resan dit: <br> Storgatan 6-8 till Västra tullgatan 13 <br> Avgång: kl.13:00 </p>
+            <br>
+            <button class="travel-btn" id="remove_travel3" name="avboka resa"><i class="fa-solid fa-trash-can"></i>Omboka</button>
+        </section>
+
+    </article>
+
+</main>
+
+    <footer>
+        <h3 class="contact">Kontakta oss</h3>
+        <hr class="line1">
+        <p class="contact-text">sverigesfardtjanst@ex.se <br> Tel: 0771-11 22 33</p>
+        <h3 class="about">Om webbplatsen</h3>
+        <hr class="line2">
+        <p class="about-text"> <a href="kundservice.html">Tillgänglighetsredogörelse</a> <br> <a href="kundservice.html">Rapportera fel på webbplatsen</a></p>
+    </footer>
+
+<script src="index.js"></script>
+<script>
+
+let changeBtn = document.getElementsByClassName("travel-btn1"); 
+
+    for(let i=0; i<changeBtn.length; i++){
+        changeBtn[i].addEventListener("click", function(){
+            window.location.href = "https://studenter.miun.se/~maha2216/test/sverigesfardtjanst/ändraresa.html"
+        }); 
+    };
+
+
+    let modal = document.getElementById("myModel"); 
+    let cancelBtn = document.getElementById("regret_btn");
+    let cancelTravelBtn = document.getElementById("remove_btn"); 
+    let removeBtn = document.getElementsByClassName("travel-btn-open"); 
+
+    // Loop som lägger till händelsehanterare på alla "Avboka resa"-knappar. 
+    for(let i=0; i<removeBtn.length; i++){      
+        removeBtn[i].addEventListener("click", function(){
+            modal.style.display  = "block"; //Gör så att pop-up rutan visas. 
+        }); 
+    }; 
+
+    // Ångra knappen inne i pop-up rutan
+    cancelBtn.onclick = function(){
+        modal.style.display = "none"; 
+    }; 
+
+    // Avboka resa knappen inne i pop-up rutan
+    cancelTravelBtn.onclick = function(){
+        window.location.href = "https://studenter.miun.se/~maha2216/test/sverigesfardtjanst/resaavbokad.html"
+    }; 
+
+    // Om användaren klickar utanför pop-up rutan så ska den tas bort, fungerar inte så bra.
+    window.onclick = function(event){
+        if (event.target == modal){
+            modal.style.display = "none"; 
+        }; 
+    }; 
+
+</script>
+</body>
+</html>
